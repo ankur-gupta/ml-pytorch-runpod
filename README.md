@@ -2,11 +2,11 @@
 
 This image depends on the public docker image
 [ankurio/ml-pytorch](https://hub.docker.com/repository/docker/ankurio/ml-pytorch/general)
-which is based on the code ytorch](https://github.com/ankur-gupta/ml-pytorch).
+which is based on the code [ml-pytorch](https://github.com/ankur-gupta/ml-pytorch).
 
 To use this image, you need to create a new template on [RunPod](https://www.runpod.io):
   1. Allow port 22 in TCP ports
-  2. Add environment variable `ML_USER-neo`. This needs to match [ml-ytorch](https://github.com/ankur-gupta/ml-pytorch).
+  2. Add environment variable `ML_USER-neo`. This needs to match [ml-pytorch](https://github.com/ankur-gupta/ml-pytorch).
 
 ## Successful Container Logs
 ```
