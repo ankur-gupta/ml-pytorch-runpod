@@ -22,7 +22,7 @@ if [[ "${PUBLIC_KEY}" ]]; then
     echo "Found PUBLIC_KEY; adding to /home/${ML_USER}/.ssh/authorized_keys."
     echo "${PUBLIC_KEY}" >> "/home/${ML_USER}/.ssh/authorized_keys"
     chmod 600 "/home/${ML_USER}/.ssh/authorized_keys"
-    chown "${ML_USER}":"${ML_USER}": "/home/${ML_USER}/.ssh/authorized_keys"
+    chown "${ML_USER}":"${ML_USER}" "/home/${ML_USER}/.ssh/authorized_keys"
 else
     echo "No PUBLIC_KEY found. Nothing to add."
 fi
