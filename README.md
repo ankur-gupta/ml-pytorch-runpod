@@ -1,4 +1,4 @@
-# ml-pytorch-run-pod
+# ml-pytorch-runpod
 
 This image depends on the public docker image
 [ankurio/ml-pytorch](https://hub.docker.com/repository/docker/ankurio/ml-pytorch/general)
