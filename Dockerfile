@@ -1,4 +1,4 @@
-FROM ankurio/ml-pytorch
+FROM ankurio/ml-pytorch:0.0.15
 
 USER root
 
