@@ -9,7 +9,7 @@ if [[ "${ML_USER}" ]]; then
     cat /tmp/rp_environment_bash
 
     # For fish
-    printenv | grep -E '^RUNPOD_|^PATH=|^_=' | awk -F = '{ print "set -x -g " $1 " \"" $2 "\"" }' >> /tmp/rp_environment_fish
+    printenv | grep -E '^RUNPOD_|^PATH=' | awk -F = '{ print "set -x -g " $1 " \"" $2 "\"" }' >> /tmp/rp_environment_fish
     echo 'source /tmp/rp_environment_fish' >> /home/"${ML_USER}"/.config/fish/config.fish
     cat /tmp/rp_environment_fish
 else
