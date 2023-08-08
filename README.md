@@ -5,11 +5,10 @@ This image depends on the public docker image
 which is based on the code ytorch](https://github.com/ankur-gupta/ml-pytorch).
 
 To use this image, you need to create a new template on [RunPod](https://www.runpod.io):
-
   1. Allow port 22 in TCP ports
-  2. Add environment variable `ML_USER-neo` (this needs to match the user defined ytorch](https://github.com/ankur-gupta/ml-pytorch))
+  2. Add environment variable `ML_USER-neo`. This needs to match [ml-ytorch](https://github.com/ankur-gupta/ml-pytorch).
 
-A successful container log looks like this:
+## Successful Container Logs
 ```
 2023-08-08T01:41:58.029423024Z
 2023-08-08T01:41:58.029429334Z CUDA Version 11.8.0
