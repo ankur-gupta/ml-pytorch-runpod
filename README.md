@@ -6,7 +6,7 @@ which is based on the code [ml-pytorch](https://github.com/ankur-gupta/ml-pytorc
 
 To use this image, you need to create a new template on [RunPod](https://www.runpod.io):
   1. Allow port 22 in TCP ports
-  2. Add environment variable `ML_USER-neo`. This needs to match [ml-pytorch](https://github.com/ankur-gupta/ml-pytorch).
+  2. Add environment variable `ML_USER=neo`. This needs to match [ml-pytorch](https://github.com/ankur-gupta/ml-pytorch).
 
 ## Successful Container Logs
 ```
