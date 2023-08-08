@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+  
+      - name: Build the image
+        run: docker build . --file Dockerfile --tag ${{ github.event.repository.name }}:${{ github.sha }}
+
+      - name: Run the image
+        run: docker run ${{ github.event.repository.name }}:${{ github.sha }} pwd
+
+        
