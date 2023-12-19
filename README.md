@@ -1,3 +1,4 @@
+# [Archived] See https://github.com/ankur-gupta/docker-ml-runpod instead
 # ml-pytorch-runpod
 
 This image depends on the public docker image
